@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <title>eHealth</title>
+        <title>ExplainME</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
@@ -17,6 +17,45 @@
         <style>
             body {background-color: black;
                   color: white;}
+        </style>
+
+        <style>
+            /* Style the modal dialog box */
+            .modal {
+                display: none; /* Hide the modal by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            
+            /* Style the modal content */
+            .modal-content {
+                background-color: #ffffff;
+                margin: 15% auto; /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%; /* 80% width */
+            }
+            
+            /* Style the close button */
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
         </style>
 
     </head>
@@ -68,32 +107,32 @@
                 <div class="col-lg-6 col-md-6 col-xs-12" background-color="white">
                     <div class="left-text-content">
                         <div class="section-heading">
-                            <h6>Sobre Nós</h6>
-                            <h2>Somos uma clínica de confiança</h2>
+                            <h6>Tutorial #1</h6>
+                            <h2>How to Create<br> Django Rest API</h2>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="service-item">
                                     <img src="../static/images/service-item-01.png" alt="">
-                                    <h4>Profissional</h4>
+                                    <h4>Python</h4>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="service-item">
                                     <img src="../static/images/service-item-01.png" alt="">
-                                    <h4>Robusta</h4>
+                                    <h4>Relevant</h4>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="service-item">
                                     <img src="../static/images/contact-info-03.png" alt="">
-                                    <h4>Confiável</h4>
+                                    <h4>Prestigious</h4>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="service-item">
                                     <img src="../static/images/contact-info-03.png" alt="">
-                                    <h4>Moderna</h4>
+                                    <h4>Modern</h4>
                                 </div>
                             </div>
                         </div>
@@ -101,11 +140,43 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="right-text-content">
-                        <p><a rel="nofollow noopener" target="_parent">A nossa prioridade será sempre o seu bem-estar <br>
-                        A eHealth é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. <br>
-                        Contamos com uma equipa de profissionais de excelência que tem como principal preocupação o bem-estar individual de cada paciente. <br>
-                        Contamos com várias especialidades médicas e exames auxiliares de diagnóstico para, de uma forma geral, corresponder às necessidades de toda a população.
+                        <!-- <p><a rel="nofollow noopener" target="_parent"> something important?? -->
+                            <ul>
+                                <li><p><a rel="nofollow noopener" target="_parent">Clone the code and set up our system</li>
+                                <li><p><a rel="nofollow noopener" target="_parent"></a>Add settings and URL configurations</li>
+                                <li><p><a rel="nofollow noopener" target="_parent"></a>Create first API endpoint</li>
+                                <li><p><a rel="nofollow noopener" target="_parent"></a>Write unit tests</li>
+                                <li><p><a rel="nofollow noopener" target="_parent"></a>Create endpoints with authentication</li>
+                                <li><p><a rel="nofollow noopener" target="_parent"></a>Create item and order models and serializers</li>
+                                <li><p><a rel="nofollow noopener" target="_parent"></a>Code viewsets and routers</li>
+                                <li><p><a rel="nofollow noopener" target="_parent"></a>Write final unit tests</li>
+                            </ul> 
                     </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <button class="right-text-content" onclick="document.getElementById('myModal').style.display='block'">Click Me For More!</button>
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                          <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                          <p>Some text in the modal.</p>
+                        </div>
+                  
+                      </div>
+                  
+                      <!-- JavaScript to handle closing the modal -->
+                      <script>
+                          // Get the modal
+                          var modal = document.getElementById('myModal');
+                  
+                          // When the user clicks anywhere outside of the modal, close it
+                          window.onclick = function(event) {
+                            if (event.target == modal) {
+                              modal.style.display = "none";
+                            }
+                          }
+                      </script>
                 </div>
             </div>
         </div>
@@ -113,7 +184,7 @@
     <!-- ***** Tutorial Post Ends ***** -->
 
     <!-- ***** Features Big Item Start ***** -->
-    <section class="section" id="features">
+    <!-- <section class="section" id="features">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
@@ -161,72 +232,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     <!-- ***** Features Big Item End ***** -->
 
+    
+
     <!-- ***** Features Big Item Start ***** -->
-    <section class="section" id="subscribe">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="section-heading">
-                        <h4>Faça a sua marcação</h4>
-                    </div>
-                    <div class="subscribe-content">
-                        <p>Preencha o formulário e aguarde o nosso contacto. Todos os campos são de preenchimento obrigatório</p>
-                        <div class="subscribe-form">
-                            <form id="subscribe-now" action="" method="get">
-                                <div class="row">
-                                    <div class="item col-md-8 col-sm-12">
-
-                                      <fieldset>
-                                        <input name="nome" type="text" id="nome" placeholder="Nome Completo" required="">
-                                      </fieldset>
-                                    </div>
-            
-                                    <div class="item col-md-8 col-sm-12">
-                                        <fieldset>
-                                          <input name="telemovel" type="text" id="telemovel" placeholder="Telemóvel" required="">
-                                        </fieldset>
-                                    </div>
-
-                                    <div class="item col-md-8 col-sm-12">
-                                        <fieldset>
-                                          <input name="email" type="text" id="email" placeholder="Email" required="">
-                                        </fieldset>
-                                    </div>
-
-                                    <div class="item col-md-8 col-sm-12">
-                                        <fieldset>
-                                          <input name="especialidade" type="text" id="especialidade" placeholder="Especialidade" required="">
-                                        </fieldset>
-                                    </div>
-
-                                    <div class="item col-md-8 col-sm-12">
-                                        <fieldset>
-                                          <input name="data" type="date" id="data" placeholder="Data" required="">
-                                        </fieldset>
-                                    </div>
-
-                                    <div class="item col-md-8 col-sm-12">
-                                        <fieldset>
-                                          <input name="horario" type="time" id="horario" placeholder="Horário" required="">
-                                        </fieldset>
-                                    </div>
-
-                                    <div class="col-md-4 col-sm-12">
-                                      <fieldset>
-                                        <button type="submit" id="form-submit" class="main-button">Marcar</button>
-                                      </fieldset>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <!-- ***** Features Big Item End ***** -->
 
         <!-- ***** Tutorial Post Starts ***** -->
@@ -236,13 +248,13 @@
                     <div class="col-lg-6 col-md-6 col-xs-12" background-color="white">
                         <div class="left-text-content">
                             <div class="section-heading">
-                                <h6>Sobre Nós</h6>
-                                <h2>Somos uma clínica de confiança</h2>
+                                <h6>Tutorial #1</h6>
+                                <h2>How to Create Django Rest API</h2>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="service-item">
-                                        <img src="../static/images/service-item-01.png" alt="">
+                                        <img src="../static/images/python.png" alt="">
                                         <h4>Profissional</h4>
                                     </div>
                                 </div>
@@ -269,15 +281,23 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-xs-12">
                         <div class="right-text-content">
-                            <p><a rel="nofollow noopener" target="_parent">A nossa prioridade será sempre o seu bem-estar <br>
-                            A eHealth é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. <br>
-                            Contamos com uma equipa de profissionais de excelência que tem como principal preocupação o bem-estar individual de cada paciente. <br>
-                            Contamos com várias especialidades médicas e exames auxiliares de diagnóstico para, de uma forma geral, corresponder às necessidades de toda a população.
+                            <p><a rel="nofollow noopener" target="_parent"> something important??
+                                <ul>
+                                    <li><p><a rel="nofollow noopener" target="_parent">Clone the code and set up our system</li>
+                                    <li><p><a rel="nofollow noopener" target="_parent"></a>Add settings and URL configurations</li>
+                                    <li><p><a rel="nofollow noopener" target="_parent"></a>Create first API endpoint</li>
+                                    <li><p><a rel="nofollow noopener" target="_parent"></a>Write unit tests</li>
+                                    <li><p><a rel="nofollow noopener" target="_parent"></a>Create endpoints with authentication</li>
+                                    <li><p><a rel="nofollow noopener" target="_parent"></a>Create item and order models and serializers</li>
+                                    <li><p><a rel="nofollow noopener" target="_parent"></a>Code viewsets and routers</li>
+                                    <li><p><a rel="nofollow noopener" target="_parent"></a>Write final unit tests</li>
+                                </ul> 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         <!-- ***** Tutorial Post Ends ***** -->
 
             <!-- ***** Tutorial Post Starts ***** -->

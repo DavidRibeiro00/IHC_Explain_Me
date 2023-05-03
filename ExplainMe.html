@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Reddit Clone</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome.css">
+    
+    <!-- Custom CSS -->
+    <style>
+      .btn-upvote {
+        background-color: #f8f9fa;
+        color: #007bff;
+      }
+
+      .btn-upvote:hover {
+        background-color: #007bff;
+        color: #fff;
+      }
+
+      .vote-count {
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">MyReddit</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New Post</a>
+              </li>
+              <form class="form-inline mx-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+              <button class="btn btn-outline-success ml-auto" type="button">Sign In</button>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      
+    
+    <!-- Main content -->
+    <!-- Main content -->
+    <main role="main">
+        <style>
+            main {
+              padding-top: 80px; /* adjust as needed */
+            }
+          </style>
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card mb-4">
+                    <style>
+                        a {
+                            color: inherit;
+                            text-decoration: none;
+                        }
+                      </style>
+                    <a href="post.html">
+                    <div class="card-body">
+                    <h5 class="card-title">First post</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget felis eget enim lobortis consequat id id ante. Fusce sodales eros eu nulla finibus, quis rutrum magna tincidunt. Sed et turpis a arcu commodo ullamcorper quis sit amet lorem. Donec tincidunt eros ac velit sollicitudin, id blandit enim pellentesque. Integer bibendum consequat ante ac efficitur. Suspendisse fringilla, lacus non sollicitudin posuere, felis elit malesuada metus, vel iaculis eros metus sit amet ex. Fusce posuere est sed sapien molestie, quis semper orci suscipit. Nunc tincidunt orci enim, vel pharetra neque ullamcorper nec.</p>
+                    <p class="card-text"><small class="text-muted">Submitted by John Doe on 2022-05-01</small></p>
+                    <div class="d-flex flex-row justify-content-start align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-arrow-up"></i>
+                        </button>
+                      </div>
+                      <div class="ml-2 mr-2">
+                        <p class="mb-0 font-weight-bold text-center"><small class="text-muted">10</small></p>
+                      </div>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-arrow-down"></i>
+                        </button>
+                      </div>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                    <h5 class="card-title">Second post</h5>
+                    <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                    <h5 class="card-title">Third post</h5>
+                    <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                    <h5 class="card-title">Fourth post</h5>
+                    <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                    <h5 class="card-title">Fith post</h5>
+                    <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </main>
+  

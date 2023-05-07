@@ -13,11 +13,11 @@
 
 
 <body>
-
+  <script src="script.js"></script>
   <!-- Navigation bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">ExplainMe</a>
+      <a class="navbar-brand" href="ExplainMe.html">ExplainMe</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,9 +27,15 @@
         </form>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
+            <a class="nav-link" href="submit.html">New Post</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
             <a class="nav-link" href="#">Profile</a>
           </li>
         </ul>
+        
       </div>
     </div>
   </nav>
@@ -40,24 +46,14 @@
       <div class="container">
       <div class="row">
           <div class="col">
-
+              
 
               <div class="card mb-4">
-                  <a href="post1.html">
+                <a href="post.html">
                   <div class="card-body">
-                  <h5 class="card-title">How to install Python in Windows?</h5>
-                  <p id="post1" class="card-text fixed-size">
-                    PythonServer Side ProgrammingProgramming<br>
-                    Python is a widely used high-level programming language. To write and execute code in python, we first need to install Python on our system.<br>
-                    <br>
-                    Installing Python on Windows takes a series of few easy steps.<br>
-                    <br>
-                    Step 1 − Select Version of Python to Install<br>
-                    Python has various versions available with differences between the syntax and working of different versions of the language. We need to choose the version which we want to use or need. There are different versions of Python 2 and Python 3 available.<br>
-                    <br>
-                    Step 2 − Download Python Executable Installer<br>
-                    On the web browser, in the official site of python (www.python.org), move to the Download for Windows section.<br>
-                  <p class="card-text"><small class="text-muted">Submitted by John Doe on 2022-05-01</small></p>
+                  <h5 id="post-title" class="card-title"></h5>
+                  <p id="post-content" class="card-text fixed-size">
+                  <p class="card-text"><small class="text-muted">Submitted by Guilherme Casal on 2022-05-11</small></p>
                   <div class="d-flex flex-row justify-content-start align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -65,7 +61,7 @@
                       </button>
                     </div>
                     <div class="ml-2 mr-2">
-                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted">10</small></p>
+                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted">0</small></p>
                     </div>
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -74,8 +70,14 @@
                     </div>
                   </div>
                   </div>
-                  </a>
+                </a>
               </div>
+              <script>
+                window.addEventListener('load', function() {
+                  // display the last post's title and content
+                  displayLastPost();
+                });
+              </script>
 
               <div class="card mb-4">
                 <a href="post2.html">

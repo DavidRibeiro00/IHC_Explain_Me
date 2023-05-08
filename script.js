@@ -47,3 +47,26 @@ function displayLastPost() {
   document.getElementById('post-content').textContent = lastPost.content;
 }
 
+function filterFunction() {
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  var elements = document.getElementsByTagName("*");
+  for (i = 0; i < elements.length; i++) {
+    txtValue = elements[i].textContent || elements[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      elements[i].style.display = "";
+    } else {
+      elements[i].style.display = "none";
+    }
+  }
+}
+
+function filter() {
+  var input = document.getElementById("myInput");
+  input.addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      filterFunction();
+    }
+  });
+}

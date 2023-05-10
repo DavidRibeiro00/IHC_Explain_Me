@@ -8,12 +8,18 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="static/css/main.css">
 
+  <script>
+    function fillEditForm() {
+      document.getElementById("title").value = localStorage.getItem("edit-title");
+      document.getElementById("content").value = localStorage.getItem("edit-content");
+    }
+  </script>
 </head>
 
-<body>
+<body onload="fillEditForm()">
   <script src="script.js"></script>
 
-  <!-- Navigation bar -->
+<!-- Navigation bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="ExplainMe.html">ExplainMe</a>
@@ -26,7 +32,7 @@
         </form>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="submit.html">New Post</a>
+            <a class="nav-link" href="submit.html">Edit Post</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -34,23 +40,23 @@
             <a class="nav-link" href="#">Profile</a>
           </li>
         </ul>
-        
+
       </div>
     </div>
   </nav>
 
-  <!-- Main content -->
+<!-- Main content -->
   <main role="main">
   <div class="container mt-4">
     <div class="card">
       <div class="card-header">
-        <h5 class="mb-0">New Post</h5>
+        <h5 class="mb-0">Edit Post</h5>
       </div>
       <div class="card-body">
         <form onsubmit="submitForm(event)">
           <div class="mb-3">
             <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-control" id="title" name="title" value="" required>
+            <input type="text" class="form-control" id="title" name="title" required>
           </div>
           <div class="mb-3">
             <label for="content" class="form-label">Content</label>
@@ -63,5 +69,5 @@
   </div>
 </main>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0

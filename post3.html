@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+<script src="/script.js"></script>
   <!-- Navigation bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -47,8 +47,8 @@
 
               <div class="card mb-4">
                   <div class="card-body">
-                  <h5 class="card-title">How To Cook Rice</h5>
-                  <p class="card-text">
+                  <h5 id="post-title" class="card-title">How To Cook Rice</h5>
+                  <p id="post-content" class="card-text">
                     Just can't master the art of cooking rice on the stovetop? No stress—you're not alone. Many things can go wrong when prepping rice: too gummy, too hard, burnt. But, once you've got it down, it's simple to get it right every time. Before you know it, you'll have a steaming bowl of rice ready to be made into our easy Buddha bowls or topped with beef and broccoli for the easiest weeknight dinner. <br>
                     <br>
 Follow our steps with our top tips and tricks to master rice on the stovetop every time: <br>
@@ -120,7 +120,7 @@ If you have a rice cooker, the game is a lot easier. Use the same magic ratio an
                     </div>
 
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="editButton()">
                         Make Edit
                       </button>
                     </div>

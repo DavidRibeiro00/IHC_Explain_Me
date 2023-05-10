@@ -25,6 +25,22 @@ function submitForm(event) {
 
 }
 
+function editButton(){
+  let title = document.getElementById('post-title').innerHTML;
+  let content = document.getElementById('post-content').innerHTML;
+
+  localStorage.setItem('edit-title', title);
+  localStorage.setItem('edit-content', content);
+
+  window.location.href = '/edit.html'
+}
+
+function fillEditForm() {
+  document.getElementById("title").value = localStorage.getItem("edit-title");
+  document.getElementById("content").value = localStorage.getItem("edit-content");
+}
+
+
 function getPosts(event){
   var arrayAsString = localStorage.getItem('posts');
 

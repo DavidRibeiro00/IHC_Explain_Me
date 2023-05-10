@@ -48,6 +48,11 @@ a{
     color: white;
 }
 
-.upvote button{
+a:hover {
+    text-decoration: none;
+    color: #212529;
+}
 
+.post-card .card-body:hover {
+    background-color: #e0e3e5;
 }

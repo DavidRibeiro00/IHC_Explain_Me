@@ -23,6 +23,7 @@ function submitForm(event) {
   // save the string in local storage
   localStorage.setItem('posts', arrayAsString);
 
+  window.location.href = 'post.html'
 }
 
 function editButton(){
@@ -32,7 +33,7 @@ function editButton(){
   localStorage.setItem('edit-title', title);
   localStorage.setItem('edit-content', content);
 
-  window.location.href = '/edit.html'
+  window.location.href = 'edit.html'
 }
 
 function fillEditForm() {

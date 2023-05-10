@@ -28,22 +28,26 @@ a{
     text-decoration: none;
 }
 
-.form-control{
+#myInput{
     border-radius: 10px;
     background-color: #343a40;
     border-color: #9a9da0;
     color: #9a9da0;
 }
 
-.form-control:hover{
+#myInput:hover{
     background-color: #343a40;
     border-color: #cccdcf;
     color: #cccdcf;
 }
 
-.form-control:focus {
+#myInput:focus {
     background-color: #4e5860;
     box-shadow: 0 0 0 0;
     border-color: white;
     color: white;
+}
+
+.upvote button{
+
 }

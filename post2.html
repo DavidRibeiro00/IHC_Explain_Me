@@ -87,17 +87,18 @@
                   
                     <!-- Button Bar -->
                   <div class="d-flex flex-row justify-content-start align-items-center">
-                    <div class="btn-group">
+
+                    <div class="btn-group" id="upvote2">
                       <button type="button" class="btn btn-sm btn-outline-secondary">
                         <i class="fa-arrow-up"></i>
                       </button>
                     </div>
 
                     <div class="ml-2 mr-2">
-                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted">10 votes</small></p>
+                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count2">8</small><small class="text-muted"> votes</small></p>
                     </div>
 
-                    <div class="btn-group">
+                    <div class="btn-group" id="downvote2">
                       <button type="button" class="btn btn-sm btn-outline-secondary">
                         <i class="fa-arrow-down"></i>
                       </button>
@@ -123,6 +124,8 @@
                   </div>
             
               </div>
+
+              <script src="vote.js"></script>
 
             <!-- Comment Section -->
             <div class="card mb-4">

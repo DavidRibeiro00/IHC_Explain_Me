@@ -8,12 +8,15 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="static/css/font-awesome.css">
+
+  <!-- Custom -->
   <link rel="stylesheet" type="text/css" href="static/css/main.css">
 </head>
 
 
 <body>
   <script src="script.js"></script>
+
   <!-- Navigation bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -55,15 +58,15 @@
                   <p id="post-content" class="card-text fixed-size">
                   <p class="card-text"><small class="text-muted">Submitted by Guilherme Casal on 2022-05-11</small></p>
                   <div class="d-flex flex-row justify-content-start align-items-center">
-                    <div class="btn-group">
+                    <div class="btn-group" id="upvote1">
                       <button type="button" class="btn btn-sm btn-outline-secondary">
                         <i class="fa-arrow-up"></i>
                       </button>
                     </div>
                     <div class="ml-2 mr-2">
-                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted">0</small></p>
+                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count1">0</small></p>
                     </div>
-                    <div class="btn-group">
+                    <div class="btn-group" id="downvote1">
                       <button type="button" class="btn btn-sm btn-outline-secondary">
                         <i class="fa-arrow-down"></i>
                       </button>
@@ -95,15 +98,15 @@
                     Supports advanced features such as Functions and Arrays.<br></p>
                   <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
                   <div class="d-flex flex-row justify-content-start align-items-center">
-                    <div class="btn-group">
+                    <div class="btn-group" id="upvote2">
                       <button type="button" class="btn btn-sm btn-outline-secondary">
                         <i class="fa-arrow-up"></i>
                       </button>
                     </div>
                     <div class="ml-2 mr-2">
-                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted">10</small></p>
+                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count2">8</small></p>
                     </div>
-                    <div class="btn-group">
+                    <div class="btn-group" id="downvote2">
                       <button type="button" class="btn btn-sm btn-outline-secondary">
                         <i class="fa-arrow-down"></i>
                       </button>
@@ -114,7 +117,7 @@
               </div>
 
               <div class="card mb-4">
-                <a href="post3.html">
+              <a href="post3.html">
                   <div class="card-body">
                   <h5 class="card-title">How to cook Rice</h5>
                   <p id="demo" class="card-text fixed-size">Just can't master the art of cooking rice on the stovetop? No stress—you're not alone. Many things can go wrong when prepping rice: too gummy, too hard, burnt. But, once you've got it down, it's simple to get it right every time. Before you know it, you'll have a steaming bowl of rice ready to be made into our easy Buddha bowls or topped with beef and broccoli for the easiest weeknight dinner. <br>
@@ -131,29 +134,29 @@
                     <br></p>
                   <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
                   <div class="d-flex flex-row justify-content-start align-items-center">
-                    <div class="btn-group">
+                    <div class="btn-group" id="upvote3">
                       <button type="button" class="btn btn-sm btn-outline-secondary">
                         <i class="fa-arrow-up"></i>
                       </button>
                     </div>
                     <div class="ml-2 mr-2">
-                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted">10</small></p>
+                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count3">7</small></p>
                     </div>
-                    <div class="btn-group">
+                    <div class="btn-group" id="downvote3">
                       <button type="button" class="btn btn-sm btn-outline-secondary">
                         <i class="fa-arrow-down"></i>
                       </button>
                     </div>
                   </div>
                   </div>
-                </a>
+              </a>
               </div>
 
               
     
 
               <div class="card mb-4">
-                <a href="post4.html">
+              <a href="post4.html">
                   <div class="card-body">
                   <h5 class="card-title">How to install Python</h5>
                   <p class="card-text fixed-size">
@@ -172,23 +175,25 @@
                     </p>
                   <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
                   <div class="d-flex flex-row justify-content-start align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <div class="btn-group" id="upvote4">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="">
                         <i class="fa-arrow-up"></i>
                       </button>
                     </div>
                     <div class="ml-2 mr-2">
-                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted">10</small></p>
+                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count4">10</small></p>
                     </div>
-                    <div class="btn-group">
+                    <div class="btn-group" id="downvote4">
                       <button type="button" class="btn btn-sm btn-outline-secondary">
                         <i class="fa-arrow-down"></i>
                       </button>
                     </div>
                   </div>
                   </div>
-                </a>
+              </a> 
               </div>
+
+              <script src="vote.js"></script>
 
               <div class="card mb-4">
                 <a href="post5.html">
@@ -205,15 +210,15 @@
                     Ctrl+X Cut line (empty selection)<br></p>
                   <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
                   <div class="d-flex flex-row justify-content-start align-items-center">
-                    <div class="btn-group">
+                    <div class="btn-group" id="upvote5">
                       <button type="button" class="btn btn-sm btn-outline-secondary">
                         <i class="fa-arrow-up"></i>
                       </button>
                     </div>
                     <div class="ml-2 mr-2">
-                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted">10</small></p>
+                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count5">21</small></p>
                     </div>
-                    <div class="btn-group">
+                    <div class="btn-group" id="downvote5">
                       <button type="button" class="btn btn-sm btn-outline-secondary">
                         <i class="fa-arrow-down"></i>
                       </button>

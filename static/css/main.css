@@ -56,3 +56,11 @@ a:hover {
 .post-card .card-body:hover {
     background-color: #e0e3e5;
 }
+
+.upvote .btn:hover{
+    background-color: rgba(0, 128, 0, 0.62);
+}
+
+.downvote .btn:hover{
+    background-color: rgba(255, 0, 0, 0.66);
+}

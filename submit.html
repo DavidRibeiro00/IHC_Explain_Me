@@ -17,6 +17,18 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="ExplainMe.html">ExplainMe</a>
+      
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Category
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Computer</a>
+          <a class="dropdown-item" href="#">Coocking</a>
+          <a class="dropdown-item" href="#">Arts</a>
+        </div>
+      </div>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -48,14 +60,34 @@
       </div>
       <div class="card-body">
         <form onsubmit="submitForm(event)">
+
           <div class="mb-3">
             <label for="title" class="form-label">Title</label>
             <input type="text" class="form-control" id="title" name="title" value="" required>
           </div>
+
+          <div class="mb-3">
+            <label for="title" class="form-label">Key Words</label>
+            <input type="text" class="form-control" id="keyWord" name="keyWord" value="" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="title" class="form-label">Category</label>
+            <select id="cars" name="cars">
+              <option value="Computer">Computer</option>
+              <option value="Coocking">Coocking</option>
+              <option value="Arts">Arts</option>
+              <option value="Math">Math</option>
+            </select>
+          </div>
+
+
           <div class="mb-3">
             <label for="content" class="form-label">Content</label>
-            <textarea class="form-control" id="content" name="content" rows="6" required></textarea>
+            <textarea 
+            class="form-control" id="content" name="content" rows="6" required></textarea>
           </div>
+
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>

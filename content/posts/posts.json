@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "user": "Jane Smith",
+      "date": "30-04-2022",
+      "title": "How to install Python",
+      "content": "PythonServer Side ProgrammingProgramming\nPython is a widely used high-level programming language. To write and execute code in python, we first need to install Python on our system.\n\nInstalling Python on Windows takes a series of few easy steps.\n\nStep 1 − Select Version of Python to Install\nPython has various versions available with differences between the syntax and working of different versions of the language. We need to choose the version which we want to use or need. There are different versions of Python 2 and Python 3 available.\n\nStep 2 − Download Python Executable Installer\nOn the web browser, in the official site of python (www.python.org), move to the Download for Windows section.\nAll the available versions of Python will be listed. Select the version required by you and click on Download. Let suppose, we chose the Python 3.9.1 version.\n\n\n\nOn clicking download, various available executable installers shall be visible with different operating system specifications. Choose the installer which suits your system operating system and download the instlaller. Let suppose, we select the Windows installer(64 bits).\n\nThe download size is less than 30MB.\n\n\n\nStep 3 − Run Executable Installer\nWe downloaded the Python 3.9.1 Windows 64 bit installer.\n\nRun the installer. Make sure to select both the checkboxes at the bottom and then click Install New.\n\n\n\nOn clicking the Install Now, The installation process starts.\n\n\n\nThe installation process will take few minutes to complete and once the installation is successful, the following screen is displayed.\n\n\n\nStep 4 − Verify Python is installed on Windows\nTo ensure if Python is succesfully installed on your system. Follow the given steps −\n\nOpen the command prompt.\n\nType ‘python’ and press enter.\n\nThe version of the python which you have installed will be displayed if the python is successfully installed on your windows.\n\n\n\nStep 5 − Verify Pip was installed\nPip is a powerful package management system for Python software packages. Thus, make sure that you have it installed.\n\nTo verify if pip was installed, follow the given steps −\n\nOpen the command prompt.\n\nEnter pip –V to check if pip was installed.\n\nThe following output appears if pip is installed successfully.\n\n\n\nWe have successfully installed python and pip on our Windows system.",
+      "score": 10,
+      "parent": 0,
+      "edits": [1]
+    },
+    {
+      "id": 2,
+      "user": "John Doe",
+      "date": "01-05-2022",
+      "content": "/content/posts/post2.txt",
+      "score": 10,
+      "parent": 0,
+      "edits": [2]
+    }
+  ]
+}

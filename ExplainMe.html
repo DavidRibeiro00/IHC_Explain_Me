@@ -24,15 +24,57 @@
       <a class="navbar-brand" href="ExplainMe.html">ExplainMe</a>
       
       <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Computer</a>
-          <a class="dropdown-item" href="#">Coocking</a>
-          <a class="dropdown-item" href="#">Arts</a>
+        <button class="btn btn-secondary dropdown-toggle" onclick="myFunction()">Category</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#informatic">Informatic</a>
+          <a href="#cooking">Coocking</a>
+          <a href="#arts">Arts</a>
+          <a href="#bricolage">Bricolage</a>  
         </div>
       </div>
+      <style>
+         /* Dropdown Button */
+        .dropbtn {
+          background-color: #04AA6D;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f6f6f6;
+          min-width: 230px;
+          border: 1px solid #ddd;
+          z-index: 1;
+        }
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {display:block;} 
+      </style>
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+      </script>
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -101,7 +143,7 @@
               </script>
 
               <!-- Post2 -->
-              <div class="post-card card mb-4">
+              <div class="post-card card mb-4" id="informatic">
                   <div class="card-body">
                   <a href="post2.html">
                   <h5 class="card-title">Batch Script Tutorial</h5>
@@ -138,49 +180,10 @@
                   </div>
               </div>
 
-              <!-- Post3 -->
-              <div class="post-card card mb-4">
-                  <div class="card-body">
-                  <a href="post3.html">
-                  <h5 class="card-title">How to cook Rice</h5>
-                  <p id="demo" class="card-text fixed-size">Just can't master the art of cooking rice on the stovetop? No stress—you're not alone. Many things can go wrong when prepping rice: too gummy, too hard, burnt. But, once you've got it down, it's simple to get it right every time. Before you know it, you'll have a steaming bowl of rice ready to be made into our easy Buddha bowls or topped with beef and broccoli for the easiest weeknight dinner. <br>
-                    <br>
-                    Follow our steps with our top tips and tricks to master rice on the stovetop every time: <br>
-                    <br>
-                    1. Rinse the rice.<br>
-                    <br>
-                    Ugh, I know, rinsing is annoying, but it really is worth it to get rid of the dusty starches that may make the rice too sticky. Just place your rice in a fine mesh strainer and rinse under cold water until the water runs clear.<br>
-                    <br>
-                    2. Remember the ratio. <br>
-                    <br>
-                    For most types of rice, you'll always use a ratio of 1 cup rice to 2 cups water, which you can scale up or down. (Double-check your rice packaging to be sure.) Feel free to swap in chicken or vegetable broth for more flavor.<br>
-                    <br></p>
-                  <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
-                </a>
 
-                <!-- Buttons -->
-                  <div class="d-flex flex-row justify-content-start align-items-center">
-                    <div class="btn-group upvote" id="upvote3">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">
-                        <i class="fa fa-arrow-up"></i>
-                      </button>
-                    </div>
-                    <div class="ml-2 mr-2">
-                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count3">7</small></p>
-                    </div>
-                    <div class="btn-group downvote" id="downvote3">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">
-                        <i class="fa fa-arrow-down"></i>
-                      </button>
-                    </div>
-
-                  </div>
-                  </div>
-              
-              </div>
 
               <!-- Post4 -->
-              <div class="post-card card mb-4">
+              <div class="post-card card mb-4" id="informatic">
                   <div class="card-body">
                   <a href="post4.html">
                   <h5 class="card-title">How to install Python</h5>
@@ -223,7 +226,7 @@
               </div>
 
               <!-- Post5 -->
-              <div class="post-card card mb-4">
+              <div class="post-card card mb-4" id="informatic">
                   <div class="card-body">
                   <a href="post5.html">
                   <h5 class="card-title">Visual Studio Code Shortcuts for Windows</h5>
@@ -259,6 +262,46 @@
                   </div>
                 
               </div>
+                            <!-- Post3 -->
+              <div class="post-card card mb-4" id="cooking">
+                  <div class="card-body">
+                  <a href="post3.html">
+                  <h5 class="card-title">How to cook Rice</h5>
+                  <p id="demo" class="card-text fixed-size">Just can't master the art of cooking rice on the stovetop? No stress—you're not alone. Many things can go wrong when prepping rice: too gummy, too hard, burnt. But, once you've got it down, it's simple to get it right every time. Before you know it, you'll have a steaming bowl of rice ready to be made into our easy Buddha bowls or topped with beef and broccoli for the easiest weeknight dinner. <br>
+                    <br>
+                    Follow our steps with our top tips and tricks to master rice on the stovetop every time: <br>
+                    <br>
+                    1. Rinse the rice.<br>
+                    <br>
+                    Ugh, I know, rinsing is annoying, but it really is worth it to get rid of the dusty starches that may make the rice too sticky. Just place your rice in a fine mesh strainer and rinse under cold water until the water runs clear.<br>
+                    <br>
+                    2. Remember the ratio. <br>
+                    <br>
+                    For most types of rice, you'll always use a ratio of 1 cup rice to 2 cups water, which you can scale up or down. (Double-check your rice packaging to be sure.) Feel free to swap in chicken or vegetable broth for more flavor.<br>
+                    <br></p>
+                  <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+                </a>
+
+                <!-- Buttons -->
+                  <div class="d-flex flex-row justify-content-start align-items-center">
+                    <div class="btn-group upvote" id="upvote3">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa fa-arrow-up"></i>
+                      </button>
+                    </div>
+                    <div class="ml-2 mr-2">
+                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count3">7</small></p>
+                    </div>
+                    <div class="btn-group downvote" id="downvote3">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa fa-arrow-down"></i>
+                      </button>
+                    </div>
+
+                  </div>
+                  </div>
+            
+            </div>
 
               <script src="vote.js"></script>
 

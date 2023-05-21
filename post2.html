@@ -121,17 +121,19 @@
                       <p class="mb-0 font-weight-bold text-center"><small class="text-muted">23 comments</small></p>
                     </div>
 
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">
-                        Share
-                      </button>
-                    </div>
-
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="editButton()">
-                        Edit
-                      </button>
-                    </div>
+                    <div class="ml-auto">
+                      <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-primary">
+                              Share
+                          </button>
+                      </div>
+              
+                      <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-success" onclick="editButton()">
+                              Edit
+                          </button>
+                      </div>
+                  </div>
 
                   </div>
                   </div>
@@ -161,18 +163,63 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Edits History</h5>
-              <ul>
-                <li>04/04/2023 <small class="text-muted">Versao 6</small></li>
-                <li>28/03/2023 <small class="text-muted">Versao 5</small></li>
-                <li>14/03/2023 <small class="text-muted">Versao 4</small></li>
-                <li>25/02/2023 <small class="text-muted">Versao 3</small></li>
-                <li>22/02/2023 <small class="text-muted">Versao 2</small></li>
-                <li>03/02/2023 <small class="text-muted">Versao 1</small></li>
+              <div class="form-group">
+                
+                <select id="sort-order" class="form-control" onchange="sortHistory()">
+                  <option value="asc">Oldest to Newest</option>
+                  <option value="desc">Newest to Oldest</option>
+                </select>
+              </div>
+              <ul id="history-list">
+                <li>04/04/2023</li>
+                <li>28/03/2023</li>
+                <li>14/03/2023</li>
+                <li>25/02/2023</li>
+                <li>22/02/2023</li>
+                <li>03/02/2023</li>
               </ul>
             </div>
           </div>
         </div>
-
+        
+        <script>
+          function sortHistory() {
+            var sortOrder = document.getElementById("sort-order").value;
+            var historyList = document.getElementById("history-list");
+            var listItems = Array.from(historyList.getElementsByTagName("li"));
+        
+            if (sortOrder === "asc") {
+              listItems.sort(function (a, b) {
+                var dateA = parseDate(a.innerText);
+                var dateB = parseDate(b.innerText);
+                return dateA - dateB;
+              });
+            } else if (sortOrder === "desc") {
+              listItems.sort(function (a, b) {
+                var dateA = parseDate(a.innerText);
+                var dateB = parseDate(b.innerText);
+                return dateB - dateA;
+              });
+            }
+        
+            var fragment = document.createDocumentFragment();
+            listItems.forEach(function (item) {
+              fragment.appendChild(item);
+            });
+        
+            historyList.innerHTML = ""; // Clear the existing content
+            historyList.appendChild(fragment); // Append the sorted items
+          }
+        
+          function parseDate(dateString) {
+            var parts = dateString.split("/");
+            var day = parseInt(parts[0], 10);
+            var month = parseInt(parts[1], 10) - 1; // Month is zero-based
+            var year = parseInt(parts[2], 10);
+            return new Date(year, month, day);
+          }
+        </script>
+        
           
 
       </div>

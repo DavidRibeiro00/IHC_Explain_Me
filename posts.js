@@ -1,32 +1,26 @@
-$(window).on('load', function () {
+$(document).ready(function () {
    getPost();
 });
 
 function getPost(){
-    $.getJSON('/content/posts/posts.json', function (postArray){
-
-        console.log(JSON.stringify(postArray));
+        let postArray = JSON.parse(localStorage.getItem("postArray"))
         let id = parseInt(localStorage.getItem('postid'));
 
-        for(let i = 0; i < postArray.posts.length; i++) {
-            let post = postArray.posts[i];
-            console.log(post);
-            if (post.id === id) {
-                document.getElementById("post-title").innerText = post.title;
-                document.getElementById("post-content").innerText = post.content;
-                document.getElementById("date").innerText = post.date;
-                document.getElementById("author").innerText = post.user;
-                document.getElementById("score").innerText = post.score;
-                // get post history
-                let ul_history = document.getElementById("edit-history");
-                let li = document.createElement("li");
-                for(i in post.edits){
-                    let temp = postArray.posts[i];
-                    li.appendChild(document.createTextNode(temp.date + " by " + temp.user))
-                    ul_history.appendChild(li)
-                }
-            }
-        }
-    });
-
+        let post = postArray.posts[id - 1];
+        console.log(post);
+        document.getElementById("post-title").innerText = post.title;
+        document.getElementById("post-content").innerText = post.content;
+        document.getElementById("date").innerText = post.date;
+        document.getElementById("author").innerText = post.user;
+        document.getElementById("score").innerText = post.score;
+        // get post history
+        let ul_history = document.getElementById("edit-history");
+        post.edits.forEach(element => {
+            let li = document.createElement("li");
+            let p = document.createElement("p");
+            let temp = postArray.posts[element - 1];
+            p.innerText = temp.date + " by " + temp.user + "\n";
+            li.appendChild(p);
+            ul_history.appendChild(li);
+        });
 }

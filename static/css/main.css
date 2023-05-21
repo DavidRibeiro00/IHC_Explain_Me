@@ -75,3 +75,7 @@ a:hover {
 .downvote .btn:hover{
     background-color: rgba(255, 0, 0, 0.66);
 }
+
+.nav-link:hover{
+    cursor: pointer;
+}

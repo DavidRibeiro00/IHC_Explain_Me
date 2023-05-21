@@ -1,29 +1,9 @@
 var posts = []; // array to store posts
-  
-function submitForm(event) {
-  event.preventDefault(); // prevent form from submitting normally
 
-  // get values from form
-  var title = document.getElementById('title').value;
-  var content = document.getElementById('content').value;
+function newTutorialButton(){
+  localStorage.setItem('postid', 0);
 
-  // create new post object
-  var post = {
-    title: title,
-    content: content
-  };
-
-  // add post to array
-  posts.push(post);
-
-  // do something with posts array (e.g. update UI)
-  console.log(posts);
-  var arrayAsString = JSON.stringify(posts);
-
-  // save the string in local storage
-  localStorage.setItem('posts', arrayAsString);
-
-  window.location.href = 'post.html'
+  window.location.href = 'submit.html'
 }
 
 function editButton(){

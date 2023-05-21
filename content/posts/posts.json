@@ -1,23 +1,154 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "user": "Jane Smith",
-      "date": "30-04-2022",
-      "title": "How to install Python",
-      "content": "PythonServer Side ProgrammingProgramming\nPython is a widely used high-level programming language. To write and execute code in python, we first need to install Python on our system.\n\nInstalling Python on Windows takes a series of few easy steps.\n\nStep 1 − Select Version of Python to Install\nPython has various versions available with differences between the syntax and working of different versions of the language. We need to choose the version which we want to use or need. There are different versions of Python 2 and Python 3 available.\n\nStep 2 − Download Python Executable Installer\nOn the web browser, in the official site of python (www.python.org), move to the Download for Windows section.\nAll the available versions of Python will be listed. Select the version required by you and click on Download. Let suppose, we chose the Python 3.9.1 version.\n\n\n\nOn clicking download, various available executable installers shall be visible with different operating system specifications. Choose the installer which suits your system operating system and download the instlaller. Let suppose, we select the Windows installer(64 bits).\n\nThe download size is less than 30MB.\n\n\n\nStep 3 − Run Executable Installer\nWe downloaded the Python 3.9.1 Windows 64 bit installer.\n\nRun the installer. Make sure to select both the checkboxes at the bottom and then click Install New.\n\n\n\nOn clicking the Install Now, The installation process starts.\n\n\n\nThe installation process will take few minutes to complete and once the installation is successful, the following screen is displayed.\n\n\n\nStep 4 − Verify Python is installed on Windows\nTo ensure if Python is succesfully installed on your system. Follow the given steps −\n\nOpen the command prompt.\n\nType ‘python’ and press enter.\n\nThe version of the python which you have installed will be displayed if the python is successfully installed on your windows.\n\n\n\nStep 5 − Verify Pip was installed\nPip is a powerful package management system for Python software packages. Thus, make sure that you have it installed.\n\nTo verify if pip was installed, follow the given steps −\n\nOpen the command prompt.\n\nEnter pip –V to check if pip was installed.\n\nThe following output appears if pip is installed successfully.\n\n\n\nWe have successfully installed python and pip on our Windows system.",
-      "score": 10,
-      "parent": 0,
-      "edits": [1]
-    },
-    {
-      "id": 2,
-      "user": "John Doe",
-      "date": "01-05-2022",
-      "content": "/content/posts/post2.txt",
-      "score": 10,
-      "parent": 0,
-      "edits": [2]
-    }
-  ]
+    "posts": [
+        {
+            "id": 1,
+            "user": "Jane Smith",
+            "date": "30-04-2022",
+            "title": "How to install Python",
+            "content": "PythonServer Side ProgrammingProgramming\nPython is a widely used high-level programming language. To write and execute code in python, we first need to install Python on our system.\n\nInstalling Python on Windows takes a series of few easy steps.\n\nStep 1 − Select Version of Python to Install\nPython has various versions available with differences between the syntax and working of different versions of the language. We need to choose the version which we want to use or need. There are different versions of Python 2 and Python 3 available.\n\nStep 2 − Download Python Executable Installer\nOn the web browser, in the official site of python (www.python.org), move to the Download for Windows section.\nAll the available versions of Python will be listed. Select the version required by you and click on Download. Let suppose, we chose the Python 3.9.1 version.\n\n\n\nOn clicking download, various available executable installers shall be visible with different operating system specifications. Choose the installer which suits your system operating system and download the instlaller. Let suppose, we select the Windows installer(64 bits).\n\nThe download size is less than 30MB.\n\n\n\nStep 3 − Run Executable Installer\nWe downloaded the Python 3.9.1 Windows 64 bit installer.\n\nRun the installer. Make sure to select both the checkboxes at the bottom and then click Install New.\n\n\n\nOn clicking the Install Now, The installation process starts.\n\n\n\nThe installation process will take few minutes to complete and once the installation is successful, the following screen is displayed.\n\n\n\nStep 4 − Verify Python is installed on Windows\nTo ensure if Python is succesfully installed on your system. Follow the given steps −\n\nOpen the command prompt.\n\nType ‘python’ and press enter.\n\nThe version of the python which you have installed will be displayed if the python is successfully installed on your windows.\n\n\n\nStep 5 − Verify Pip was installed\nPip is a powerful package management system for Python software packages. Thus, make sure that you have it installed.\n\nTo verify if pip was installed, follow the given steps −\n\nOpen the command prompt.\n\nEnter pip –V to check if pip was installed.\n\nThe following output appears if pip is installed successfully.\n\n\n\nWe have successfully installed python and pip on our Windows system.",
+            "score": 10,
+            "parent": 0,
+            "edits": [
+                1
+            ]
+        },
+        {
+            "id": 2,
+            "user": "John Doe",
+            "date": "01-05-2022",
+            "title": "Batch Script Tutorial",
+            "content": "/content/posts/post2.txt",
+            "score": 10,
+            "parent": 0,
+            "edits": [
+                2
+            ]
+        },
+        {
+            "id": 3,
+            "user": "John Doe",
+            "date": "01-05-2022",
+            "title": "How To Cook Rice",
+            "content": "/content/posts/post3.txt",
+            "score": 10,
+            "parent": 0,
+            "edits": [
+                3
+            ]
+        },
+        {
+            "id": 4,
+            "user": "John Doe",
+            "date": "01-05-2022",
+            "title": "How to install Python in Windows?",
+            "content": "/content/posts/post4.txt",
+            "score": 10,
+            "parent": 0,
+            "edits": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        },
+        {
+            "id": 5,
+            "user": "John Doe",
+            "date": "01-05-2022",
+            "title": "How to install Python in Windows?",
+            "content": "/content/posts/post5.txt",
+            "score": 10,
+            "parent": 0,
+            "edits": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        },
+        {
+            "id": 6,
+            "user": "John Doe",
+            "date": "01-05-2022",
+            "title": "How to install Python in Windows?",
+            "content": "/content/posts/post6.txt",
+            "score": 10,
+            "parent": 5,
+            "edits": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        },
+        {
+            "id": 7,
+            "user": "John Doe",
+            "date": "01-05-2022",
+            "title": "How to install Python in Windows?",
+            "content": "/content/posts/post7.txt",
+            "score": 10,
+            "parent": 6,
+            "edits": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        },
+        {
+            "id": 8,
+            "user": "John Doe",
+            "date": "01-05-2022",
+            "title": "How to install Python in Windows?",
+            "content": "/content/posts/post8.txt",
+            "score": 10,
+            "parent": 7,
+            "edits": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        },
+        {
+            "id": 9,
+            "user": "John Doe",
+            "date": "01-05-2022",
+            "title": "How to install Python in Windows?",
+            "content": "/content/posts/post9.txt",
+            "score": 10,
+            "parent": 8,
+            "edits": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        },
+        {
+            "id": 10,
+            "user": "John Doe",
+            "date": "2022-05-01..",
+            "title": "How to install Python in Windows?",
+            "content": "General<br>\nCtrl+Shift+P, F1 Show Command Palette<br>\nCtrl+P Quick Open, Go to File…<br>\nCtrl+Shift+N New window/instance<br>\nCtrl+Shift+W Close window/instance<br>\nCtrl+, User Settings<br>\nCtrl+K Ctrl+S Keyboard Shortcuts<br>\nBasic editing<br>\nCtrl+X Cut line (empty selection)<br>\nCtrl+C Copy line (empty selection)<br>\nAlt+ ↑ / ↓ Move line up/down<br>\nShift+Alt + ↓ / ↑ Copy line up/down<br>\nCtrl+Shift+K Delete line<br>\nCtrl+Enter Insert line below<br>\nCtrl+Shift+Enter Insert line above<br>\nCtrl+Shift+\\ Jump to matching bracket<br>\nCtrl+] / [ Indent/outdent line<br>\nHome / End Go to beginning/end of line<br>\nCtrl+Home Go to beginning of file<br>\nCtrl+End Go to end of file<br>\nCtrl+↑ / ↓ Scroll line up/down<br>\nAlt+PgUp / PgDn Scroll page up/down<br>\nCtrl+Shift+[ Fold (collapse) region<br>\nCtrl+Shift+] Unfold (uncollapse) region<br>\nCtrl+K Ctrl+[ Fold (collapse) all subregions<br>\nCtrl+K Ctrl+] Unfold (uncollapse) all subregions<br>\nCtrl+K Ctrl+0 Fold (collapse) all regions<br>\nCtrl+K Ctrl+J Unfold (uncollapse) all regions<br>\nCtrl+K Ctrl+C Add line comment<br>\nCtrl+K Ctrl+U Remove line comment<br>\nCtrl+/ Toggle line comment<br>\nShift+Alt+A Toggle block comment<br>\nAlt+Z Toggle word wrap<br>\nNavigation<br>\nCtrl+T Show all Symbols<br>\nCtrl+G Go to Line...<br>\nCtrl+P Go to File...<br>\nCtrl+Shift+O Go to Symbol...<br>\nCtrl+Shift+M Show Problems panel<br>\nF8 Go to next error or warning<br>\nShift+F8 Go to previous error or warning<br>\nCtrl+Shift+Tab Navigate editor group history<br>\nAlt+ ← / → Go back / forward<br>\n",
+            "score": 0,
+            "parent": 0,
+            "edits": [
+                10
+            ]
+        }
+    ]
 }

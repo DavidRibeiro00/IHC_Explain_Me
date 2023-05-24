@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>ExplainME Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <!-- Custom -->
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+
+
+<body>
+  <script src="script.js"></script>
+  <script src="homepage.js"></script>
+  <!-- Navigation bar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="ExplainMe.html">ExplainMe</a>
+      
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" onclick="myFunction()">Category</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="Informatic.html">Informatic</a>
+          <a href="Cooking.html">Cooking</a>
+          <a href="Arts.html">Arts</a>
+          <a href="Bricolage.html">Bricolage</a>  
+        </div>
+      </div>
+      
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+      </script>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-flex mx-auto">
+          <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" style="width: 400px" id="myInput" onkeyup="filter()">
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" onclick="newTutorialButton()">New Tutorial</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Profile.html">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+  <!-- Main content -->
+  <main role="main">
+      <div class="container">
+      <div class="row">
+          <div class="col">
+              
+            <script>
+              window.addEventListener('load', function() {
+                // display the last post's title and content
+                displayLastPost();
+              });
+            </script>
+              
+              <!-- Post2 -->
+              <div class="post-card card mb-4">
+                  <div class="card-body">
+                  <a href="post2.html">
+                  <h5 class="card-title">Batch Script Tutorial</h5>
+                  <p class="card-text fixed-size">
+                    Batch Script is incorporated to automate command sequences which are repetitive in nature. Scripting is a way by which one can alleviate this necessity by automating these command sequences in order to make one’s life at the shell easier and more productive. In most organizations, Batch Script is incorporated in some way or the other to automate stuff.<br>
+                    <br>
+                    Some of the features of Batch Script are −<br>
+                    <br>
+                    Can read inputs from users so that it can be processed further.<br>
+                    <br>
+                    Has control structures such as for, if, while, switch for better automating and scripting.<br>
+                    <br>
+                    Supports advanced features such as Functions and Arrays.<br></p>
+                  <p class="card-text"><small class="text-muted">Submitted by John Doe on 2022-05-01</small></p>
+                </a>
+
+                <!-- Buttons -->
+                  <div class="d-flex flex-row justify-content-start align-items-center">
+                    <div class="btn-group upvote" id="upvote2">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa fa-arrow-up"></i>
+                      </button>
+                    </div>
+                    <div class="ml-2 mr-2">
+                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count2">8</small></p>
+                    </div>
+                    <div class="btn-group downvote" id="downvote2">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa fa-arrow-down"></i>
+                      </button>
+                    </div>
+
+                  </div>
+                  </div>
+              </div>
+
+              <!-- Post4 -->
+              <div class="post-card card mb-4">
+                  <div class="card-body">
+                  <a href="post4.html">
+                  <h5 class="card-title">How to install Python</h5>
+                  <p class="card-text fixed-size">
+                    In order to become Python developer, the first step is to learn how to install or update Python on a local machine or computer. In this tutorial, we will discuss the installation of Python on various operating systems.<br>
+                    <br>
+                    Installation on Windows<br>
+                    Visit the link https://www.python.org/downloads/ to download the latest release of Python. In this process, we will install Python 3.8.6 on our Windows operating system. When we click on the above link, it will bring us the following page.<br>
+                    <br>
+                    Step - 1: Select the Python's version to download.<br>
+                    <br>
+                    Click on the download button.<br>
+                    <br>
+                    Python Environment Set-up<br>
+                    Step - 2: Click on the Install Now<br>
+                    <br>
+                    </p>
+                  <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+                  <div class="d-flex flex-row justify-content-start align-items-center">
+                  </a>
+
+                  <!-- Buttons -->
+                    <div class="btn-group upvote" id="upvote4">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="">
+                        <i class="fa fa-arrow-up"></i>
+                      </button>
+                    </div>
+                    <div class="ml-2 mr-2">
+                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count4">10</small></p>
+                    </div>
+                    <div class="btn-group downvote" id="downvote4">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa fa-arrow-down"></i>
+                      </button>
+                    </div>
+
+                  </div>
+                  </div>
+              </div>
+
+              <!-- Post5 -->
+              <div class="post-card card mb-4">
+                  <div class="card-body">
+                  <a href="post5.html">
+                  <h5 class="card-title">Visual Studio Code Shortcuts for Windows</h5>
+                  <p class="card-text fixed-size">General<br>
+                    Ctrl+Shift+P, F1 Show Command Palette<br>
+                    Ctrl+P Quick Open, Go to File…<br>
+                    Ctrl+Shift+N New window/instance<br>
+                    Ctrl+Shift+W Close window/instance<br>
+                    Ctrl+, User Settings<br>
+                    Ctrl+K Ctrl+S Keyboard Shortcuts<br>
+                    Basic editing<br>
+                    Ctrl+X Cut line (empty selection)<br></p>
+                  <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+                </a>
+
+                  <!-- Buttons -->
+                  <div class="d-flex flex-row justify-content-start align-items-center">
+                    <div class="btn-group upvote" id="upvote5">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa fa-arrow-up"></i>
+                      </button>
+                    </div>
+                    <div class="ml-2 mr-2">
+                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count5">21</small></p>
+                    </div>
+                    <div class="btn-group downvote" id="downvote5">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <i class="fa fa-arrow-down"></i>
+                      </button>
+                    </div>
+
+                  </div>
+                  </div> 
+              </div>
+      
+
+          <!-- Post11 -->
+        <div class="post-card card mb-4">
+          <div class="card-body">
+          <a href="post11.html">
+          <h5 class="card-title">Java Programming: Getting Started with the Basics</h5>
+          <p id="demo" class="card-text fixed-size">
+            Introduction:
+            In this tutorial, we'll dive into the world of Java programming and explore the basics of this popular programming language. Java is known for its versatility and is widely used for developing desktop, web, and mobile applications. Whether you're a beginner or have some programming experience, this tutorial will guide you through the essential concepts and syntax of Java programming.<br>
+            <br>
+            Topics Covered:<br>
+            <br>
+            1. Installing and setting up Java Development Kit (JDK)<br>
+            2. Understanding variables, data types, and operators in Java<br>
+            3. Working with control flow statements (if-else, loops)<br>
+            4. Introduction to object-oriented programming (classes, objects, methods)<br>
+            5. Handling user input and displaying output<br>
+            6. Introduction to arrays and collections<br>
+            7. Exception handling and error management<br>
+          </p>
+          <p class="card-text"><small class="text-muted">Submitted by Albert Pattinson on 2023-08-15</small></p>
+        </a>
+
+        <!-- Buttons -->
+          <div class="d-flex flex-row justify-content-start align-items-center">
+            <div class="btn-group upvote" id="upvote11">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-up"></i>
+              </button>
+            </div>
+            <div class="ml-2 mr-2">
+              <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count11">8</small></p>
+            </div>
+            <div class="btn-group downvote" id="downvote11">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-down"></i>
+              </button>
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+        <!-- Post12 -->
+        <div class="post-card card mb-4">
+          <div class="card-body">
+          <a href="post12.html">
+          <h5 class="card-title">Mastering Sorting Algorithms: A Comprehensive Guide</h5>
+          <p id="demo" class="card-text fixed-size">
+            Introduction:<br>
+              In this tutorial, we'll dive into the world of sorting algorithms and explore the different techniques used to efficiently sort data. Sorting algorithms play a crucial role in computer science and are used to arrange elements in a specific order. Whether you're a beginner or have some programming experience, this comprehensive guide will introduce you to various sorting algorithms and help you understand their strengths and weaknesses.<br>
+              <br>
+              Topics Covered:<br>
+              <br>
+              1. What are sorting algorithms and why are they important?<br>
+              2. Understanding algorithm complexity and Big O notation<br>
+              3. The bubble sort algorithm<br>
+              4. The insertion sort algorithm<br>
+              5. The selection sort algorithm<br>
+              6. The merge sort algorithm<br>
+              7. The quicksort algorithm<br>
+          </p>
+          <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+        </a>
+
+        <!-- Buttons -->
+          <div class="d-flex flex-row justify-content-start align-items-center">
+            <div class="btn-group upvote" id="upvote12">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-up"></i>
+              </button>
+            </div>
+            <div class="ml-2 mr-2">
+              <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count12">12</small></p>
+            </div>
+            <div class="btn-group downvote" id="downvote12">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-down"></i>
+              </button>
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+
+
+
+              <script src="vote.js"></script>
+
+          </div>
+      </div>
+      </div>
+  </main>
+

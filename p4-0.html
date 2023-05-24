@@ -18,17 +18,6 @@
     <div class="container">
       <a class="navbar-brand" href="ExplainMe.html">ExplainMe</a>
       
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Computer</a>
-          <a class="dropdown-item" href="#">Coocking</a>
-          <a class="dropdown-item" href="#">Arts</a>
-        </div>
-      </div>
-      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,7 +32,7 @@
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Profile</a>
+            <a class="nav-link" href="Profile.html">Profile</a>
           </li>
         </ul>
         
@@ -125,18 +114,62 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Edits History</h5>
+                <div class="form-group">
+                  
+                  <select id="sort-order" class="form-control" onchange="sortHistory()">
+                    <option value="asc">Oldest to Newest</option>
+                    <option value="desc">Newest to Oldest</option>
+                  </select>
+                </div>
                 <ul>
-                    <li><a href="post4.html">04/04/2023</a></li>
-                    <li><a href="p4-4.html">28/03/2023</a></li>
-                    <li><a href="p4-3.html">14/03/2023</a></li>
-                    <li><a href="p4-2.html">25/02/2023</a></li>
-                    <li><a href="p4-1.html">22/02/2023</a></li>
-                    <li><a href="p4-0.html">03/02/2023</a></li>
+                  <li><a href="post4.html">04/04/2023 <small class="text-muted">Version 6</small></a></li> 
+                  <li><a href="p4-4.html">28/03/2023 <small class="text-muted">Version 5</small></a></li> 
+                  <li><a href="p4-3.html">14/03/2023 <small class="text-muted">Version 4</small></a></li>
+                  <li><a href="p4-2.html">25/02/2023 <small class="text-muted">Version 3</small></a></li>
+                  <li><a href="p4-1.html">22/02/2023 <small class="text-muted">Version 2</small></a></li>
+                  <li><u>03/02/2023 <small class="text-muted">Version 1</small></u></li>
               </ul>
               </div>
             </div>
           </div>
 
+          <script>
+            function sortHistory() {
+              var sortOrder = document.getElementById("sort-order").value;
+              var historyList = document.getElementById("history-list");
+              var listItems = Array.from(historyList.getElementsByTagName("li"));
+          
+              if (sortOrder === "asc") {
+                listItems.sort(function (a, b) {
+                  var dateA = parseDate(a.innerText);
+                  var dateB = parseDate(b.innerText);
+                  return dateA - dateB;
+                });
+              } else if (sortOrder === "desc") {
+                listItems.sort(function (a, b) {
+                  var dateA = parseDate(a.innerText);
+                  var dateB = parseDate(b.innerText);
+                  return dateB - dateA;
+                });
+              }
+          
+              var fragment = document.createDocumentFragment();
+              listItems.forEach(function (item) {
+                fragment.appendChild(item);
+              });
+          
+              historyList.innerHTML = ""; // Clear the existing content
+              historyList.appendChild(fragment); // Append the sorted items
+            }
+          
+            function parseDate(dateString) {
+              var parts = dateString.split("/");
+              var day = parseInt(parts[0], 10);
+              var month = parseInt(parts[1], 10) - 1; // Month is zero-based
+              var year = parseInt(parts[2], 10);
+              return new Date(year, month, day);
+            }
+          </script>
           
 
       </div>

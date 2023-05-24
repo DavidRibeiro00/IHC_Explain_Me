@@ -31,7 +31,7 @@ function submitForm() {
 
     let post = {
         id: (postArray.posts.length + 1).toString(),
-        user: "Guilherme Claro",
+        user: "Guilherme Casal",
         title: title,
         content: content,
         date: d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear(),

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>ExplainME Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <!-- Custom -->
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+
+
+<body>
+  <script src="script.js"></script>
+  <script src="homepage.js"></script>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="ExplainMe.html">ExplainMe</a>
+      
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" onclick="myFunction()">Category</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#informatic">Informatic</a>
+          <a href="#cooking">Coocking</a>
+          <a href="#arts">Arts</a>
+          <a href="#bricolage">Bricolage</a>  
+        </div>
+      </div>
+      
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+      </script>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-flex mx-auto">
+          <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" style="width: 400px" id="myInput" onkeyup="filter()">
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" onclick="newTutorialButton()">New Tutorial</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+  <!-- Main content -->
+  <main role="main">
+      <div class="container">
+      <div class="row">
+          <div class="col">
+              
+            <script>
+              window.addEventListener('load', function() {
+                // display the last post's title and content
+                displayLastPost();
+              });
+            </script>
+
+              
+
+              <!-- Post3 -->
+              <div class="post-card card mb-4" id="cooking">
+                <div class="card-body">
+                <a href="post3.html">
+                <h5 class="card-title">How to cook Rice</h5>
+                <p id="demo" class="card-text fixed-size">Just can't master the art of cooking rice on the stovetop? No stress—you're not alone. Many things can go wrong when prepping rice: too gummy, too hard, burnt. But, once you've got it down, it's simple to get it right every time. Before you know it, you'll have a steaming bowl of rice ready to be made into our easy Buddha bowls or topped with beef and broccoli for the easiest weeknight dinner. <br>
+                  <br>
+                  Follow our steps with our top tips and tricks to master rice on the stovetop every time: <br>
+                  <br>
+                  1. Rinse the rice.<br>
+                  <br>
+                  Ugh, I know, rinsing is annoying, but it really is worth it to get rid of the dusty starches that may make the rice too sticky. Just place your rice in a fine mesh strainer and rinse under cold water until the water runs clear.<br>
+                  <br>
+                  2. Remember the ratio. <br>
+                  <br>
+                  For most types of rice, you'll always use a ratio of 1 cup rice to 2 cups water, which you can scale up or down. (Double-check your rice packaging to be sure.) Feel free to swap in chicken or vegetable broth for more flavor.<br>
+                  <br></p>
+                <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+              </a>
+
+              <!-- Buttons -->
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                  <div class="btn-group upvote" id="upvote3">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <i class="fa fa-arrow-up"></i>
+                    </button>
+                  </div>
+                  <div class="ml-2 mr-2">
+                    <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count3">7</small></p>
+                  </div>
+                  <div class="btn-group downvote" id="downvote3">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <i class="fa fa-arrow-down"></i>
+                    </button>
+                  </div>
+
+                </div>
+                </div>
+              </div>
+              
+
+            
+        
+
+        <!-- Post7 -->
+          <div class="post-card card mb-4" id="cooking">
+            <div class="card-body">
+            <a href="post7.html">
+            <h5 class="card-title">Cook</h5>
+            <p id="demo" class="card-text fixed-size"></p>
+            <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+          </a>
+
+          <!-- Buttons -->
+            <div class="d-flex flex-row justify-content-start align-items-center">
+              <div class="btn-group upvote" id="upvote7">
+                <button type="button" class="btn btn-sm btn-outline-secondary">
+                  <i class="fa fa-arrow-up"></i>
+                </button>
+              </div>
+              <div class="ml-2 mr-2">
+                <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count7">7</small></p>
+              </div>
+              <div class="btn-group downvote" id="downvote7">
+                <button type="button" class="btn btn-sm btn-outline-secondary">
+                  <i class="fa fa-arrow-down"></i>
+                </button>
+              </div>
+
+            </div>
+            </div>
+          </div>
+
+        <!-- Post8 -->
+        <div class="post-card card mb-4" id="cooking">
+          <div class="card-body">
+          <a href="post8.html">
+          <h5 class="card-title">Cook</h5>
+          <p id="demo" class="card-text fixed-size"></p>
+          <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+        </a>
+
+        <!-- Buttons -->
+          <div class="d-flex flex-row justify-content-start align-items-center">
+            <div class="btn-group upvote" id="upvote8">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-up"></i>
+              </button>
+            </div>
+            <div class="ml-2 mr-2">
+              <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count8">7</small></p>
+            </div>
+            <div class="btn-group downvote" id="downvote8">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-down"></i>
+              </button>
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+        
+
+
+
+
+              <script src="vote.js"></script>
+
+          </div>
+      </div>
+      </div>
+  </main>
+

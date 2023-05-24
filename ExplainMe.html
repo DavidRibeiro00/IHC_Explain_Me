@@ -32,44 +32,7 @@
           <a href="#bricolage">Bricolage</a>  
         </div>
       </div>
-      <style>
-         /* Dropdown Button */
-        .dropbtn {
-          background-color: #04AA6D;
-          color: white;
-          padding: 16px;
-          font-size: 16px;
-          border: none;
-          cursor: pointer;
-        }
-        /* The container <div> - needed to position the dropdown content */
-        .dropdown {
-          position: relative;
-          display: inline-block;
-        }
-        /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f6f6f6;
-          min-width: 230px;
-          border: 1px solid #ddd;
-          z-index: 1;
-        }
-        /* Links inside the dropdown */
-        .dropdown-content a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-        }
-
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {background-color: #f1f1f1}
-
-        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-        .show {display:block;} 
-      </style>
+      
       <script>
         function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
@@ -105,7 +68,12 @@
       <div class="row">
           <div class="col">
               
-            
+            <script>
+              window.addEventListener('load', function() {
+                // display the last post's title and content
+                displayLastPost();
+              });
+            </script>
 
             <!-- Post1 -->
               <div class="post-card card mb-4">
@@ -133,15 +101,8 @@
 
                   </div>
                   </div>
-                
               </div>
-              <script>
-                window.addEventListener('load', function() {
-                  // display the last post's title and content
-                  displayLastPost();
-                });
-              </script>
-
+              
               <!-- Post2 -->
               <div class="post-card card mb-4" id="informatic">
                   <div class="card-body">
@@ -180,6 +141,45 @@
                   </div>
               </div>
 
+              <!-- Post3 -->
+              <div class="post-card card mb-4" id="cooking">
+                <div class="card-body">
+                <a href="post3.html">
+                <h5 class="card-title">How to cook Rice</h5>
+                <p id="demo" class="card-text fixed-size">Just can't master the art of cooking rice on the stovetop? No stress—you're not alone. Many things can go wrong when prepping rice: too gummy, too hard, burnt. But, once you've got it down, it's simple to get it right every time. Before you know it, you'll have a steaming bowl of rice ready to be made into our easy Buddha bowls or topped with beef and broccoli for the easiest weeknight dinner. <br>
+                  <br>
+                  Follow our steps with our top tips and tricks to master rice on the stovetop every time: <br>
+                  <br>
+                  1. Rinse the rice.<br>
+                  <br>
+                  Ugh, I know, rinsing is annoying, but it really is worth it to get rid of the dusty starches that may make the rice too sticky. Just place your rice in a fine mesh strainer and rinse under cold water until the water runs clear.<br>
+                  <br>
+                  2. Remember the ratio. <br>
+                  <br>
+                  For most types of rice, you'll always use a ratio of 1 cup rice to 2 cups water, which you can scale up or down. (Double-check your rice packaging to be sure.) Feel free to swap in chicken or vegetable broth for more flavor.<br>
+                  <br></p>
+                <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+              </a>
+
+              <!-- Buttons -->
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                  <div class="btn-group upvote" id="upvote3">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <i class="fa fa-arrow-up"></i>
+                    </button>
+                  </div>
+                  <div class="ml-2 mr-2">
+                    <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count3">7</small></p>
+                  </div>
+                  <div class="btn-group downvote" id="downvote3">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <i class="fa fa-arrow-down"></i>
+                    </button>
+                  </div>
+
+                </div>
+                </div>
+              </div>
 
 
               <!-- Post4 -->
@@ -259,49 +259,223 @@
                     </div>
 
                   </div>
-                  </div>
-                
+                  </div> 
               </div>
-                            <!-- Post3 -->
-              <div class="post-card card mb-4" id="cooking">
-                  <div class="card-body">
-                  <a href="post3.html">
-                  <h5 class="card-title">How to cook Rice</h5>
-                  <p id="demo" class="card-text fixed-size">Just can't master the art of cooking rice on the stovetop? No stress—you're not alone. Many things can go wrong when prepping rice: too gummy, too hard, burnt. But, once you've got it down, it's simple to get it right every time. Before you know it, you'll have a steaming bowl of rice ready to be made into our easy Buddha bowls or topped with beef and broccoli for the easiest weeknight dinner. <br>
-                    <br>
-                    Follow our steps with our top tips and tricks to master rice on the stovetop every time: <br>
-                    <br>
-                    1. Rinse the rice.<br>
-                    <br>
-                    Ugh, I know, rinsing is annoying, but it really is worth it to get rid of the dusty starches that may make the rice too sticky. Just place your rice in a fine mesh strainer and rinse under cold water until the water runs clear.<br>
-                    <br>
-                    2. Remember the ratio. <br>
-                    <br>
-                    For most types of rice, you'll always use a ratio of 1 cup rice to 2 cups water, which you can scale up or down. (Double-check your rice packaging to be sure.) Feel free to swap in chicken or vegetable broth for more flavor.<br>
-                    <br></p>
-                  <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
-                </a>
+              
+              
 
-                <!-- Buttons -->
-                  <div class="d-flex flex-row justify-content-start align-items-center">
-                    <div class="btn-group upvote" id="upvote3">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">
-                        <i class="fa fa-arrow-up"></i>
-                      </button>
-                    </div>
-                    <div class="ml-2 mr-2">
-                      <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count3">7</small></p>
-                    </div>
-                    <div class="btn-group downvote" id="downvote3">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">
-                        <i class="fa fa-arrow-down"></i>
-                      </button>
-                    </div>
+            <!-- Post6 -->
+            <div class="post-card card mb-4" id="cooking">
+              <div class="card-body">
+              <a href="post6.html">
+              <h5 class="card-title">Art</h5>
+              <p id="demo" class="card-text fixed-size"></p>
+              <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+            </a>
 
-                  </div>
-                  </div>
-            
+            <!-- Buttons -->
+              <div class="d-flex flex-row justify-content-start align-items-center">
+                <div class="btn-group upvote" id="upvote6">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                </div>
+                <div class="ml-2 mr-2">
+                  <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count6">7</small></p>
+                </div>
+                <div class="btn-group downvote" id="downvote6">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <i class="fa fa-arrow-down"></i>
+                  </button>
+                </div>
+
+              </div>
+              </div>
             </div>
+
+        
+
+        <!-- Post7 -->
+          <div class="post-card card mb-4" id="cooking">
+            <div class="card-body">
+            <a href="post7.html">
+            <h5 class="card-title">Cook</h5>
+            <p id="demo" class="card-text fixed-size"></p>
+            <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+          </a>
+
+          <!-- Buttons -->
+            <div class="d-flex flex-row justify-content-start align-items-center">
+              <div class="btn-group upvote" id="upvote7">
+                <button type="button" class="btn btn-sm btn-outline-secondary">
+                  <i class="fa fa-arrow-up"></i>
+                </button>
+              </div>
+              <div class="ml-2 mr-2">
+                <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count7">7</small></p>
+              </div>
+              <div class="btn-group downvote" id="downvote7">
+                <button type="button" class="btn btn-sm btn-outline-secondary">
+                  <i class="fa fa-arrow-down"></i>
+                </button>
+              </div>
+
+            </div>
+            </div>
+          </div>
+
+        <!-- Post8 -->
+        <div class="post-card card mb-4" id="cooking">
+          <div class="card-body">
+          <a href="post8.html">
+          <h5 class="card-title">Cook</h5>
+          <p id="demo" class="card-text fixed-size"></p>
+          <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+        </a>
+
+        <!-- Buttons -->
+          <div class="d-flex flex-row justify-content-start align-items-center">
+            <div class="btn-group upvote" id="upvote8">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-up"></i>
+              </button>
+            </div>
+            <div class="ml-2 mr-2">
+              <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count8">7</small></p>
+            </div>
+            <div class="btn-group downvote" id="downvote8">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-down"></i>
+              </button>
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+        <!-- Post9 -->
+        <div class="post-card card mb-4" id="cooking">
+          <div class="card-body">
+          <a href="post6.html">
+          <h5 class="card-title">Arts</h5>
+          <p id="demo" class="card-text fixed-size"></p>
+          <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+        </a>
+
+        <!-- Buttons -->
+          <div class="d-flex flex-row justify-content-start align-items-center">
+            <div class="btn-group upvote" id="upvote9">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-up"></i>
+              </button>
+            </div>
+            <div class="ml-2 mr-2">
+              <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count9">7</small></p>
+            </div>
+            <div class="btn-group downvote" id="downvote9">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-down"></i>
+              </button>
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+        <!-- Post10 -->
+        <div class="post-card card mb-4" id="cooking">
+          <div class="card-body">
+          <a href="post10.html">
+          <h5 class="card-title">Cook</h5>
+          <p id="demo" class="card-text fixed-size"></p>
+          <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+        </a>
+
+        <!-- Buttons -->
+          <div class="d-flex flex-row justify-content-start align-items-center">
+            <div class="btn-group upvote" id="upvote10">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-up"></i>
+              </button>
+            </div>
+            <div class="ml-2 mr-2">
+              <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count10">7</small></p>
+            </div>
+            <div class="btn-group downvote" id="downvote10">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-down"></i>
+              </button>
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+          <!-- Post11 -->
+        <div class="post-card card mb-4" id="cooking">
+          <div class="card-body">
+          <a href="post11.html">
+          <h5 class="card-title">Java</h5>
+          <p id="demo" class="card-text fixed-size"></p>
+          <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+        </a>
+
+        <!-- Buttons -->
+          <div class="d-flex flex-row justify-content-start align-items-center">
+            <div class="btn-group upvote" id="upvote11">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-up"></i>
+              </button>
+            </div>
+            <div class="ml-2 mr-2">
+              <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count11">7</small></p>
+            </div>
+            <div class="btn-group downvote" id="downvote11">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-down"></i>
+              </button>
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+        <!-- Post12 -->
+        <div class="post-card card mb-4" id="cooking">
+          <div class="card-body">
+          <a href="post12.html">
+          <h5 class="card-title">Sorting</h5>
+          <p id="demo" class="card-text fixed-size"></p>
+          <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-04-30</small></p>
+        </a>
+
+        <!-- Buttons -->
+          <div class="d-flex flex-row justify-content-start align-items-center">
+            <div class="btn-group upvote" id="upvote12">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-up"></i>
+              </button>
+            </div>
+            <div class="ml-2 mr-2">
+              <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count12">7</small></p>
+            </div>
+            <div class="btn-group downvote" id="downvote12">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-down"></i>
+              </button>
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
 
               <script src="vote.js"></script>
 

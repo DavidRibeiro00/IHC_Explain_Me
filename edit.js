@@ -1,14 +1,21 @@
 $(document).ready(function(){
     $(".form").submit(function(e){
-        localStorage.setItem('postid', '0')
         e.preventDefault(); // prevent form from submitting normally
-        submitForm();
+        submitEdit();
     })
 })
 
-function submitForm() {
+function fillEditForm() {
+    let post_id = localStorage.getItem('postid');
+    let post = JSON.parse(localStorage.getItem('postArray')).posts[post_id - 1];
+
+    document.getElementById("title").value = post.title;
+    document.getElementById("content").value = post.content;
+}
+
+function submitEdit() {
     let postArray = JSON.parse(localStorage.getItem("postArray"));
-    let parent = '0';
+    let parent = localStorage.getItem("postid");
 
     // get values from form
     let title = document.getElementById('title').value;
@@ -18,17 +25,18 @@ function submitForm() {
     let date = Date.now();
     const d = new Date(date);
 
-    let edits = [(postArray.posts.length + 1).toString()];
+    let parent_post = postArray.posts[parent - 1];
+    parent_post.edits.push((postArray.posts.length + 1).toString());
 
     let post = {
         id: (postArray.posts.length + 1).toString(),
-        user: "Guilherme Casal",
+        user: "Guilherme Claro",
         title: title,
         content: content,
         date: d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear(),
         score: "0",
         parent: parent,
-        edits: edits
+        edits: parent_post.edits
     };
 
     postArray.posts.push(post);

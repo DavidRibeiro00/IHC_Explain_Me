@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>ExplainME Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <!-- Custom -->
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+
+
+<body>
+  <script src="script.js"></script>
+  <script src="homepage.js"></script>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="ExplainMe.html">ExplainMe</a>
+      
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" onclick="myFunction()">Category</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="Informatic.html">Informatic</a>
+          <a href="Cooking.html">Coocking</a>
+          <a href="Arts.html">Arts</a>
+          <a href="Bricolage.html">Bricolage</a>  
+        </div>
+      </div>
+      
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+      </script>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-flex mx-auto">
+          <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" style="width: 400px" id="myInput" onkeyup="filter()">
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" onclick="newTutorialButton()">New Tutorial</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+  <!-- Main content -->
+  <main role="main">
+      <div class="container">
+      <div class="row">
+          <div class="col">
+
+            <!-- Post6 -->
+            <div class="post-card card mb-4">
+              <div class="card-body">
+              <a href="post6.html">
+              <h5 class="card-title">Creating a Stunning Watercolor Landscape Painting</h5>
+              <p class="card-text fixed-size">
+                Introduction:<br>
+                In this tutorial, we'll explore the beautiful world of watercolor painting and create a stunning landscape artwork. Watercolor is a versatile and expressive medium that can capture the essence of nature in a unique way. Whether you're a beginner or an experienced artist, this tutorial will guide you through the process of creating a vibrant and captivating landscape painting.<br>
+                <br>
+                Materials Needed:<br>
+                <br>
+                Watercolor paints (various colors)<br>
+                Watercolor paper (preferably cold-pressed)<br>
+                Watercolor brushes (a variety of sizes)<br>
+                Water container<br>
+                Paper towels<br>
+                Palette or mixing tray<br>
+                Step 1: Gathering Inspiration<br>
+              </p>
+              <p class="card-text"><small class="text-muted">Submitted by John Doe on 2022-05-01</small></p>
+            </a>
+
+            <!-- Buttons -->
+              <div class="d-flex flex-row justify-content-start align-items-center">
+                <div class="btn-group upvote" id="upvote6">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                </div>
+                <div class="ml-2 mr-2">
+                  <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count6">7</small></p>
+                </div>
+                <div class="btn-group downvote" id="downvote6">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <i class="fa fa-arrow-down"></i>
+                  </button>
+                </div>
+
+              </div>
+              </div>
+            </div>
+        
+
+        <!-- Post9 -->
+        <div class="post-card card mb-4">
+          <div class="card-body">
+          <a href="post6.html">
+          <h5 class="card-title">Mastering Pen and Ink: Creating Intricate Illustrations</h5>
+          <p id="demo" class="card-text fixed-size">
+            Introduction:<br>
+            In this tutorial, we'll dive into the fascinating world of pen and ink illustrations and learn how to create intricate and detailed artworks. Pen and ink is a versatile medium that allows for precise lines and intricate textures, making it perfect for capturing intricate details in drawings. Whether you're a beginner or an experienced artist, this tutorial will guide you through the process of mastering pen and ink techniques and creating stunning illustrations.<br>
+            <br>
+            Materials Needed:<br>
+            <br>
+            - Drawing pens (varying nib sizes, such as fine, medium, and bold)<br>
+            - Drawing paper (preferably smooth and heavyweight)<br>
+            - Pencil and eraser<br>
+            - Reference images or objects<br>
+          </p>
+          <p class="card-text"><small class="text-muted">Submitted by Jane Smith on 2022-06-15</small></p>
+        </a>
+
+        <!-- Buttons -->
+          <div class="d-flex flex-row justify-content-start align-items-center">
+            <div class="btn-group upvote" id="upvote9">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-up"></i>
+              </button>
+            </div>
+            <div class="ml-2 mr-2">
+              <p class="mb-0 font-weight-bold text-center"><small class="text-muted" id="vote-count9">30</small></p>
+            </div>
+            <div class="btn-group downvote" id="downvote9">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                <i class="fa fa-arrow-down"></i>
+              </button>
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+       
+
+
+              <script src="vote.js"></script>
+
+          </div>
+      </div>
+      </div>
+  </main>
+

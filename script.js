@@ -50,6 +50,10 @@ function filterFunction() {
   var elements = document.getElementsByTagName("*");
   for (i = 0; i < elements.length; i++) {
     txtValue = elements[i].textContent || elements[i].innerText;
+    if (elements[i].id === "navbar" || elements[i].closest("#navbar")){
+      // Skip filtering for the nav-bar
+      continue;
+    }
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       elements[i].style.display = "";
     } else {

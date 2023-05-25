@@ -35,7 +35,7 @@
         </form>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="submit.html">Edit Post</a>
+            <a class="nav-link" href="submit.html">New Tutorial</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -58,12 +58,13 @@
       <div class="card-body">
         <form class="form">
           <div class="mb-3">
-            <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-control" id="title" name="title" required>
+            <label for="images" class="form-label">Images</label>
+            <input type="file" class="form-control-file" id="images" name="images" accept="image/*" multiple>
           </div>
+
           <div class="mb-3">
             <label for="content" class="form-label">Content</label>
-            <textarea class="form-control" id="content" name="content" rows="6" required></textarea>
+            <textarea class="form-control" id="content" name="content" rows="25" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>

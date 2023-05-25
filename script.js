@@ -39,19 +39,21 @@ function displayLastPost() {
 }
 
 function filterFunction() {
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  var elements = document.getElementsByClassName("card-body");
-  
+  var input = document.getElementById("myInput");
+  var filter = input.value.toUpperCase();
+  var elements = document.getElementsByClassName("post-card");
+  var visibleElements = [];
 
-  for (i = 0; i < elements.length; i++) {
-    txtValue = elements[i].textContent || elements[i].innerText;
+  for (var i = 0; i < elements.length; i++) {
+    var txtValue = elements[i].textContent || elements[i].innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       elements[i].style.display = "";
+      visibleElements.push(elements[i]);
     } else {
       elements[i].style.display = "none";
     }
   }
+
 }
 
 function filter() {

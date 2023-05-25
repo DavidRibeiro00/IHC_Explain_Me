@@ -64,6 +64,15 @@ a:hover {
     color: #212529;
 }
 
+#cars{
+    background-color: #343a40;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+}
+
+
 .post-card .card-body:hover {
     background-color: #e0e3e5;
 }
@@ -110,6 +119,7 @@ a:hover {
     text-decoration: none;
     display: block;
   }
+
 
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #f1f1f1}

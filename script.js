@@ -41,13 +41,11 @@ function displayLastPost() {
 function filterFunction() {
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
-  var elements = document.getElementsByTagName("*");
+  var elements = document.getElementsByClassName("card-body");
+  
+
   for (i = 0; i < elements.length; i++) {
     txtValue = elements[i].textContent || elements[i].innerText;
-    if (elements[i].id === "navbar" || elements[i].closest("#navbar")){
-      // Skip filtering for the nav-bar
-      continue;
-    }
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       elements[i].style.display = "";
     } else {
